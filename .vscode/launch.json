@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "console": "integratedTerminal",
+            "runtimeArgs": [
+                "--loader",
+                "ts-node/esm"
+            ],
+            "args": [
+                "${workspaceFolder}/src/app.ts"
+            ]
+        }
+    ],
+}
