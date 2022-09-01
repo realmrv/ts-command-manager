@@ -1,10 +1,10 @@
 import { ChildProcessWithoutNullStreams, spawn } from "child_process";
-import { CommandExecutor } from "../../core/executor/command.executor";
-import { FileService } from "../../core/files/file.service";
+import { CommandExecutor } from "../../core/executor/command.executor.js";
+import { FileService } from "../../core/files/file.service.js";
 import { IStreamLogger } from "../../core/handlers/stream-logger.interface";
-import { StreamHandler } from "../../core/handlers/stream.handler";
+import { StreamHandler } from "../../core/handlers/stream.handler.js";
 import { PromptService } from "../../core/prompt/prompt.service.js";
-import { FfmpegBuilder } from "./ffmpeg.builder";
+import { FfmpegBuilder } from "./ffmpeg.builder.js";
 import { ICommandExecFfmpeg, IFfmpegInput } from "./ffmpeg.types";
 
 export class FfmpegExecutor extends CommandExecutor<IFfmpegInput> {

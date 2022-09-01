@@ -3,7 +3,7 @@ import { IStreamLogger } from "../../core/handlers/stream-logger.interface";
 export class ConsoleLogger implements IStreamLogger {
     private static _instance: ConsoleLogger;
 
-    public static get Instance(): ConsoleLogger {
+    public static get instance(): ConsoleLogger {
         if (!ConsoleLogger._instance) {
             ConsoleLogger._instance = new ConsoleLogger();
         }
